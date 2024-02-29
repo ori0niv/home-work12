@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: grey;
+  height: 100px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menu2 {
+  display: none;
+  position: relative;
+}
+
+nav div:hover .menu2{
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+}
+
+.menu3 {
+  display: none;
+}
+
+.product2:hover .menu3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 200px;
+}
+
+.sub-menu {
+  color: white;
+  background-color: blueviolet;
+  text-decoration: none;
+  width: 200px;
+  padding: 30px 50px;
+  display: flex;
+  border: 2px solid gray;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 8px 8px 15px 0px white;
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+}
+
+.link:hover, .products:hover {
+  background-color: blueviolet;
+  color:white;
+}
+
+.sub-menu:hover {
+  background-color: blueviolet;
+}
+
+.product2 {
+  position: relative;
+}
+
+.active {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
